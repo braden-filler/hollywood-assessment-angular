@@ -19,16 +19,18 @@ export class ArtistsComponent implements OnInit {
     this.getArtists();
   }
 
+  //calls service to get all artist from api
   getArtists(){
     this.artistService.getArtists().subscribe((artists) => {
       this.artists = artists;
     });
   }
 
+  //calls service to get single artist based on id from api
   onSelect(artist: any): void {
     this.selectedArtist = artist;
     this.artistService.getArtist(artist.artistID).subscribe((artist) => {
-      console.log("artist info in artists", artist)
+      // console.log("artist info in artists", artist)
       this.selectedArtist = artist;
     });
   }
