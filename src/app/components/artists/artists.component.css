@@ -1,0 +1,39 @@
+.main-container{
+  display: flex;
+  font-family: Arial, sans-serif
+}
+
+.artist-list{
+  flex: 1;
+}
+
+.artist-information{
+  flex: 3;
+}
+
+img {
+  display: block;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  flex: 1;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.artist-object{
+  background-color: lightgray;
+  margin: 10px;
+  width: 300px;
+  height: 100px;
+  display: flex;
+}
+
+.text-content{
+  flex: 2;
+  padding: 10%;
+}
+
+li {
+  list-style-type: none;
+}

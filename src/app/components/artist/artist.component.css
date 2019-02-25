@@ -1,0 +1,19 @@
+
+.artist-information{
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: gray;
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif
+}
+
+img {
+  height: 200px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+div {
+  padding: 5px;
+}
