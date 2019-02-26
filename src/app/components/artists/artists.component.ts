@@ -23,6 +23,9 @@ export class ArtistsComponent implements OnInit {
   getArtists(){
     this.artistService.getArtists().subscribe((artists) => {
       this.artists = artists;
+      if(this.artists.length <= 0){
+        this.getArtists();
+      }
     });
   }
 
